@@ -27,8 +27,8 @@ NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=your_password
 NEO4J_DB=neo4j
 IMPORT_PATH=/var/lib/neo4j/import
-PINECONE_API_KEY = "pcsk_2AwQ92_FnRzxqj3w9FJAf6djnPf1A7SGrJPiU6vZb8BJa3qNKuxLm6kJSdyyKjKknyohLV"
-PINECONE_HOST="https://person-embeddings-18le97h.svc.aped-4627-b74a.pinecone.io"
+PINECONE_API_KEY = ""
+PINECONE_HOST=""
 
 > **Note:**  
 > Ensure Neo4j has file import permissions configured in `neo4j.conf`.
