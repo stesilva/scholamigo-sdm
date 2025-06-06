@@ -27,8 +27,8 @@ NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=your_password
 NEO4J_DB=neo4j
 IMPORT_PATH=/var/lib/neo4j/import
-PINECONE_API_KEY = ""
-PINECONE_HOST=""
+PINECONE_API_KEY = 
+PINECONE_HOST=
 
 > **Note:**  
 > Ensure Neo4j has file import permissions configured in `neo4j.conf`.
@@ -68,20 +68,20 @@ python explotation_users_data_load_neo4j.py
 
 Successful output should look like:
 
-CSV files copied to Neo4j import directory.
-Connecting to Neo4j and loading data...
-Creation and loading completed with successes.
-Generating embeddings for users...
-Embeddings generated successfully.
+ CSV files copied to Neo4j import directory.
+ Connecting to Neo4j and loading data...
+ Creation and loading completed with successes.
+ Generating embeddings for users...
+ Embeddings generated successfully.
 
 
 ### 9. Exploitation
 
 To use the graph you can choose one of the 3 scripts that demonstrates possible aaplications:
 
-python similar_users_recommendation.py (Retrives similar users based on embeddings - Recommendation System)
-python user_alumni_recommendation.py (Retrives similar alumni based on a given user and scholarship - Recommendation System)
-python users_analytics.py (Basic queries on Cypher to retrieve data for analysis)
+- python similar_users_recommendation.py (Retrives similar users based on embeddings - Recommendation System)
+- python user_alumni_recommendation.py (Retrives similar alumni based on a given user and scholarship - Recommendation System)
+- python users_analytics.py (Basic queries on Cypher to retrieve data for analysis)
 
 ---
 
