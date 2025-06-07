@@ -23,7 +23,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 ## 4. Environment Variables
-Add a `.env` file in the project root with the following content:
+Add a `.env` file in the project root with the following content (change accordingly):
 
 NEO4J_URI=bolt://localhost:7687
 
@@ -35,7 +35,7 @@ NEO4J_DB=neo4j
 
 IMPORT_PATH=/var/lib/neo4j/import
 
-PINECONE_API_KEY = 
+PINECONE_API_KEY= 
 
 PINECONE_HOST=
 
@@ -60,11 +60,17 @@ Make sure the following CSV files are inside `outputs/neo4j/`:
 Start Neo4j locally or via Docker:
 
 docker run
+
 --name neo4j
+
 -p7474:7474 -p7687:7687
+
 -v $HOME/neo4j/data:/data
+
 -v $HOME/neo4j/import:/var/lib/neo4j/import
+
 -e NEO4J_AUTH=neo4j/your_password
+
 -d neo4j:latest
 
 ### 7. Run the Script
@@ -90,7 +96,7 @@ Successful output should look like:
 
 ### 9. Exploitation
 
-To use the graph you can choose one of the 3 scripts that demonstrates possible aaplications:
+To use the graph you can choose one of the 3 scripts that demonstrates possible aplications:
 
 - python similar_users_recommendation.py (Retrives similar users based on embeddings - Recommendation System)
 - python user_alumni_recommendation.py (Retrives similar alumni based on a given user and scholarship - Recommendation System)
