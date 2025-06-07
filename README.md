@@ -7,27 +7,36 @@ This project loads structured user data into a Neo4j graph database and generate
 ### 1. Clone the Repository
 
 git clone https://github.com/stesilva/scholamigo-sdm.git
+
 cd scholamigo-sdm
 
 ### 2. Set Up Your Python Environment
 
 python -m venv venv
+
 source venv/bin/activate # On Windows: venv\Scripts\activate
 
 ### 3. Install Dependencies
 
 pip install --upgrade pip
+
 pip install -r requirements.txt
 
 ## 4. Environment Variables
 Add a `.env` file in the project root with the following content:
 
 NEO4J_URI=bolt://localhost:7687
+
 NEO4J_USERNAME=neo4j
+
 NEO4J_PASSWORD=your_password
+
 NEO4J_DB=neo4j
+
 IMPORT_PATH=/var/lib/neo4j/import
+
 PINECONE_API_KEY = 
+
 PINECONE_HOST=
 
 > **Note:**  
@@ -69,9 +78,13 @@ python explotation_users_data_load_neo4j.py
 Successful output should look like:
 
  CSV files copied to Neo4j import directory.
+ 
  Connecting to Neo4j and loading data...
+ 
  Creation and loading completed with successes.
+ 
  Generating embeddings for users...
+ 
  Embeddings generated successfully.
 
 
